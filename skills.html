@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skills.css">
+    <script defer src="skils.js"></script>
+    <title>مهاراتي</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #292b2c;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #292b2c;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-btn {
+            background-color: #fff;
+            color: #292b2c;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .close-btn {
+            background-color: #fff;
+            color: #292b2c;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        /* Main content styles */
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            max-width: 150px;
+            border: 4px solid #fff;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Additional Sections styles */
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #292b2c;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .section p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            margin-bottom: 8px;
+            color: #292b2c;
+            font-size: 16px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #292b2c;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+    <script defer src="skills.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>Your Professional Portfolio</h1>
+            <button class="menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="closeSidebar()">Close</button>
+            <nav>
+                <ul>
+                    <li><a href="ff.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="main-content">
+            <section class="profile-section">
+                <img src="IMG_0185 copy.webp" alt="Your Profile Picture" class="profile-img">
+                <h2>احب اوريكم مهاراتي</h2>
+            </section>
+    
+            <section class="skills">
+                <p>السلام عليكم بوري لكم مهاراتي الجيدة واتمنى ان يعجبكم هذا التقديم
+                </p>
+                <ul>
+                    <li>مدمن العاب</li>
+                    <li>رسام </li>
+                    <li> محاسب</li>
+                    <!-- Add more skills as needed -->
+                </ul>
+            </section>
+    
+            <!-- Additional Sections -->
+            <section class="section experience">
+                <h2>خبراتي</h2>
+                <p>
+                   كانوا يسموني بالابتدائي الاله الحاسب اشتغلت مع ايلون ماسك وهتلر لكن هتلر تخصمت معه فا صار الي صار وكمان بايدن كنت الوزير حق بس جت الزنجية ذيك ولي سوابق بالسجن .
+                </p>
+                <!-- Add more details about your experience -->
+            </section>
+    
+            <section class="section education">
+                <h2>مدمن العاب</h2>
+                <p>
+                   ينادوني بالبيت يا مدمن الالعاب ، للاسف الالعاب صارت زي الحشيش عندي لدرجة اني جبت البلاتينيوم في كبهد في ساعتين ، لدرجة ماعندي وقت لاهلي ، وماعندي وقت للاكل
+                </p>
+                <!-- Add more details about your education -->
+            </section>
+    
+            <section class="section projects">
+                <h2>رسام</h2>
+                <p>
+                    يسموني بيكاسوا بالمدراسة لدرجة ان استاذ الفنية يقولي مكانك مب بذي المدراسة, الرسم  هو انا وانا هو الرسم، مستحيل اتخلى عن الرسم
+                </p>
+                <!-- Add details about your projects -->
+            </section>
+    
+            <section class="section contact">
+                <h2>للتواصل</h2>
+                <p>
+برد عليك صدقني
+                </p>
+                <div class="contact-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

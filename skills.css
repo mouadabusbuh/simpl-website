@@ -1,0 +1,88 @@
+/* Header styles */
+header {
+    background-color: #292b2c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Your Preferred Font', sans-serif; /* Add your preferred font */
+    font-size: 24px;
+}
+
+.menu-btn {
+    background-color: #fff;
+    color: #292b2c;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #ddd;
+}
+
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    overflow-x: hidden;
+    transition: left 0.5s ease, box-shadow 0.5s ease; /* Smooth transition for opening/closing */
+    padding-top: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+}
+
+
+.skills {
+    background-color: #f9f9f9; /* Add a light background color */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.skills p {
+    font-size: 18px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+    font-size: 18px; /* Increase font size for skills */
+}
+
+
+
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #292b2c;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Add margin for spacing */
+}
